@@ -1,10 +1,17 @@
-import Main from "./views/Main"
+import Main from "./components/Main";
 import './App.css';
+import ViewProduct from "./components/ViewProduct";
+import UpdateProduct from "./components/UpdateProduct";
+import {Router} from "@reach/router";
 
 function App() {
   return (
     <div className="App">
-      <Main/>
+      <Router>
+      <UpdateProduct path="/products/update/:id"/>
+      <ViewProduct path="/products/:id"/>
+      <Main path="/products"/>
+      </Router>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 //Connects to MongoDB and if name of database does not currently exist, it will create a new one
-mongoose.connect('mongodb://localhost/productmanagerdb', {
+mongoose.connect('mongodb://localhost/pm_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
