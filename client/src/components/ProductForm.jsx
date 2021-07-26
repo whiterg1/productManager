@@ -13,7 +13,9 @@ export default () => {
             price,
             description
         })
-        .then(res=> console.log(res.data))
+        .then(res=> {
+            console.log(res.data)
+        })
         .catch(err => console.log(err))
     }
 

@@ -20,7 +20,7 @@ module.exports.getProductById = (request, response) => {
     .catch(err=>console.log(err));
 }
 //Update
-module.exports.updateExistingProduct = (request, responst) => {
+module.exports.updateExistingProduct = (request, response) => {
     Product.findOneAndUpdate({_id: request.params.id},
     request.body,
     {new:true, runValidators: true}
